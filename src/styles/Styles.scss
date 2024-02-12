@@ -13,6 +13,7 @@
     margin: 0;
     user-select: none;
 }
+
 html{
     scroll-behavior: smooth;
     transition: all 500ms;
@@ -30,10 +31,6 @@ header{
     padding: 1rem;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    background: $main-background-white;
 
     .left{
         display: flex;
@@ -874,6 +871,7 @@ main {
         padding: 1.5rem 0;
         max-width: 330px;
         margin: 0 auto;
+        z-index: 1000;
         ul{
             display: grid;
             justify-content: center;
@@ -975,6 +973,12 @@ main {
     }
 }
 @media (min-width: 769px) {
+    .applytonavbar {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        backdrop-filter: blur(15px);
+    }
     .blogsandexperience{
         grid-template-areas: 
         "one one two five"

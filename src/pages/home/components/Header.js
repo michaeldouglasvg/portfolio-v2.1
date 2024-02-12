@@ -1,14 +1,30 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { images } from "../../../constants/AssetsFile"
 import { FaBlog, FaChevronDown, FaCode, FaCog, FaHome, FaMoon, FaPhone, FaProjectDiagram, FaSun } from "react-icons/fa";
 import { useTheme } from '../../../context/theme/ThemeSection';
 
 const Header = () => {
   const { darkMode, toggleDarkMode } = useTheme();
-  console.log(darkMode)
+  const [showNav, setShowNav] = useState(false);
+  console.log({showNav})
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      if (scrollPosition > 250) {
+        setShowNav(true);
+      } else {
+        setShowNav(false);
+      }
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
-    <header>
+    <header className={showNav && "applytonavbar"}>
       <div className="logo" id="privacy">
         <img src={images.sitelogo} alt=""/>
       </div>
