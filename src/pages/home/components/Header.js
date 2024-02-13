@@ -6,7 +6,6 @@ import { useTheme } from '../../../context/theme/ThemeSection';
 const Header = () => {
   const { darkMode, toggleDarkMode } = useTheme();
   const [showNav, setShowNav] = useState(false);
-  console.log({showNav})
 
   useEffect(() => {
     const handleScroll = () => {

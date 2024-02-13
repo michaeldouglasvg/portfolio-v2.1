@@ -5,6 +5,7 @@ import Media from './components/Media'
 import Experience from './components/Experience'
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
+import News from './components/News'
 
 const MainBlog = () => {
   useEffect(() => {
@@ -16,11 +17,11 @@ const MainBlog = () => {
         <h1 data-aos="zoom-out-up">Blog (Heighlights)</h1>
       </div>
       <div className="blogsandexperience">
+       <News />
+       <WhatInMind />
        <Treding />
-       <WhatInMind />
-       <WhatInMind />
-       <Experience />
        <Media />
+       <Experience />
       </div>
     </section>
   )

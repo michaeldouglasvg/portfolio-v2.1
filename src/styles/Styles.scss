@@ -612,7 +612,6 @@ main {
     margin-inline: auto;
     padding: 1rem 4rem;
     .grid{
-        outline: 1px solid rgb(208, 206, 202);
         padding: 1rem;
         border-radius: 10px;
         position: relative;
@@ -645,7 +644,6 @@ main {
     align-items: center;
     justify-content: flex-start;
     flex-wrap: wrap;
-    border-bottom: 1px solid $text-light-gray;
     position: sticky;
     top: 0;
     background: whitesmoke;
@@ -854,6 +852,9 @@ main {
         margin-top: 1rem;
     }
 
+    .heading-blog {
+        border-bottom:1px solid rgb(208, 206, 202);
+    }
     .companies{
         margin-left: 0;
         .singlecaompany{

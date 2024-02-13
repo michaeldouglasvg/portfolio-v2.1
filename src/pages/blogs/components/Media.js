@@ -2,9 +2,37 @@ import React, { useEffect, useState } from 'react'
 import { FaCloudflare, FaSearch } from 'react-icons/fa'
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
+// import { useFetch } from '../../../context/apis/FetchResources';
 
 const Media = () => {
   const [data, setData] = useState([]);
+  // const [loading, setLoading] = useState(false);
+  // const [error, setError] = useState(null);
+  // const token = '';
+  // console.log({data})
+  
+  // const {customFetch} = useFetch();
+  
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     setLoading(true);
+  //     setError(null);
+
+  //     try {
+  //       const response1 = await customFetch('https://newsapi');
+  //       setData(response1);
+
+  //       const response2 = await customFetch('', {}, token);
+  //       setData(response2);
+  //     } catch (error) {
+  //       setError(error.message);
+  //     } finally {
+  //       setLoading(false);
+  //     }
+  //   };
+  //   fetchData();
+  // }, [token]);
+
   useEffect(() => {
     AOS.init();
 })
