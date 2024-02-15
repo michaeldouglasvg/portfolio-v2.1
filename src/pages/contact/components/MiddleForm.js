@@ -23,16 +23,16 @@ const MiddleForm = () => {
                 </div>
                 <div className="form-group">
                     <span>Email Address</span>
-                    <input type='text' placeholder='Eg: Michael Douglas' name='email'/>
+                    <input type='text' placeholder='Eg: gtechmb27.infinity@gmail.com' name='email'/>
                 </div>
             </div>
             <div className="form-group">
                 <span>Subject</span>
-                <input type='text' placeholder='Eg: Michael Douglas' name='subject'/>
+                <input type='text' placeholder='Eg: Requesting for...' name='subject'/>
             </div>
             <div className="form-group">
                 <span>Your message</span>
-                <textarea placeholder='Enter your message here...' name='message'/>
+                <textarea placeholder='Eg: Is there a possibility we can merge out thoughts and work on....(Must be below 200words)' name='message'/>
             </div>
             <div className="form-group">
                 <button onClick={() => setOnsubmit()} type="submit" style={{cursor: onsubmit?"pointer":"not-allowed"}} disabled={!onsubmit}>Send Message</button>

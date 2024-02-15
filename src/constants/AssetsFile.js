@@ -1,6 +1,6 @@
 export const images = {
     sitelogo: require("../assets/images/logo/mylogo.png"),
-    portraitone: require("../assets/images/content/potrait.jpg"),
+    portraitone: require("../assets/images/content/potraita.jpg"),
     aboutme: require("../assets/images/content/aboutme.jpg"),
     certifications: require("../assets/images/content/certificates.jpg"),
     cloudeservices: require("../assets/images/content/cloudservices.jpg"),
