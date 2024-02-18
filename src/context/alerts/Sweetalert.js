@@ -37,7 +37,7 @@ export const SweetAlertProvider = ({ children }) => {
   const githubLinks = () => {
     Swal.fire({
       title: "ML and DS Models!!!",
-      text: "Click the Github button to access the Machine Learning (ML) and Data Science/Analysis (DS) Models that are the projects done in this portfolio.",
+      text: "Click the Github button to access the Machine Learning (ML) and Data Science/Analysis (DS) Models, The Models are in full capacity. You are given this option as I am working to sort the hosting of these models, Keep updated.",
       icon: "info",
       showCancelButton: true,
       confirmButtonText: "Visit Github",
@@ -46,7 +46,7 @@ export const SweetAlertProvider = ({ children }) => {
       if (result.isConfirmed) {
         window.location.href = "https://github.com/michaeldouglasvg?tab=repositories";
       } else if (result.dismiss === Swal.DismissReason.cancel) {
-        Swal.fire("Navigating to Porfolio", "You can always visit Github later!", "success");
+        Swal.fire("Navigating to Portfolio", "You can always visit Github later!", "success");
       }
     });
   }
