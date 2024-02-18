@@ -34,6 +34,23 @@ export const SweetAlertProvider = ({ children }) => {
     });
   };
 
+  const githubLinks = () => {
+    Swal.fire({
+      title: "ML and DS Models!!!",
+      text: "Click the Github button to access the Machine Learning (ML) and Data Science/Analysis (DS) Models that are the projects done in this portfolio.",
+      icon: "info",
+      showCancelButton: true,
+      confirmButtonText: "Visit Github",
+      cancelButtonText: "Continue to Portfolio"
+    }).then((result) => {
+      if (result.isConfirmed) {
+        window.location.href = "https://github.com/michaeldouglasvg?tab=repositories";
+      } else if (result.dismiss === Swal.DismissReason.cancel) {
+        Swal.fire("Navigating to Porfolio", "You can always visit Github later!", "success");
+      }
+    });
+  }
+
 //   const saveChangesDialog = () => {
 //     Swal.fire({
 //         title: "Do you want to save the changes?",
@@ -149,7 +166,7 @@ export const SweetAlertProvider = ({ children }) => {
 //   }
 
   const value = {
-    toastAlert, normalALert
+    toastAlert, normalALert, githubLinks
   };
 
   return (
