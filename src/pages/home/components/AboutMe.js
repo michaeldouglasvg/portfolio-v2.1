@@ -18,7 +18,7 @@ const AboutMe = () => {
                 <div className="main">
                     <div className="tallying">
                         <p className="date">Name: <span>{singlecard.company}</span></p>
-                        <p className="date">Ovaral: <span>{singlecard.duration}.</span></p>
+                        {/* <p className="date">Ovaral: <span>{singlecard.duration}.</span></p> */}
                         <div className="stacks">Stacks: {singlecard.technologies}</div>
                     </div>
                     <div className="remarks"><p>{singlecard.company==="Huawei"?"Program":"Role"}: {singlecard.role}</p></div>
