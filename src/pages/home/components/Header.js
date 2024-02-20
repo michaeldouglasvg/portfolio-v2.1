@@ -10,6 +10,7 @@ const Header = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
+      console.log(scrollPosition);
       if (scrollPosition > 250) {
         setShowNav(true);
       } else {
@@ -28,7 +29,7 @@ const Header = () => {
         <img src={images.sitelogo} alt=""/>
       </div>
       <div className="left">
-        <div className="navigation">
+        <div className="navigation" style={{ bottom: showNav ? '-130px' : '0px' }}>   
           <ul>
             <li> <FaHome className="icon" color='blue'/><p>Home</p></li>
             <li> <FaCode className="icon" color="orange" /><p>Services</p></li>
