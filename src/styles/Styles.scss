@@ -854,13 +854,14 @@ main {
         }
     }
 }
-.container {
-    max-width: 100px;
-    margin: 0 auto;
-    padding: 0rem;
-    width: 100%;
-}
+
 @media (max-width: 769px) {
+    .container {
+        margin: 0 auto;
+        padding: 0rem;
+        width: 100%;
+        overflow-x: hidden;
+    }
     .cardSamamry{
         margin-top: 1rem;
     }
@@ -960,14 +961,14 @@ main {
 
     .singlecaompany{
         margin: 1rem auto;
-        min-width: 300px;
+        min-width: 280px;
     }
     .content-section{
         padding: 0;
     }
     .singlecard{
         margin-top: 1rem;
-        min-width: 380px;
+        min-width: 280px;
         width: 100%;
     }
     .Footermain{
