@@ -590,6 +590,7 @@ main {
         .infomation{
             margin-left: 1rem;
             p{
+                text-align: left;
              &:nth-child(1){
                 font-weight: 600;
              }
@@ -856,6 +857,11 @@ main {
 }
 
 @media (max-width: 769px) {
+    .type{
+        top: -.4rem;
+        right: -.4rem;
+        padding: .2rem 1rem;
+    }
     .Footermain{
         width: 100%;
         margin: 0;
