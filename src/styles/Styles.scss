@@ -52,14 +52,17 @@ body{
     padding: 2rem 1rem;
 }
 .Midsection{
-    display: grid;
-    place-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     width: 100%;
     height: calc(100vh - 100px);
     & > p{
         color: white;
         padding-top: 1.5rem;
         text-align: center;
+        width: 100%;
     }
 }
 .Bottomoutline{
