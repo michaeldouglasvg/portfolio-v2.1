@@ -39,7 +39,7 @@ const Loader = () => {
                 visible={true}
             />
             {initialize ? <p style={{color: initialize&&"#e4980c"}}>Initalizing...</p> :
-            !showready ? <p style={{color: !showready&&"#07e5f5"}}>Getting things ready...</p> : <p style={{color: showready&&"#f507ed"}}>All set succefull!!!</p>}
+            !showready ? <p style={{color: !showready&&"#07e5f5"}}>Getting things ready...</p> : <p style={{color: showready&&"#f507ed"}}>All set succeful!!!</p>}
         </div>
         <div className="Bottomoutline">
             <p style={{color: initialize?"#e4980c":showready?"#07e5f5":"f507ed"}}>Connection: On</p>
