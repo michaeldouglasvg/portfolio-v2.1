@@ -34,8 +34,8 @@ const ProfileInformation = ({ functionClose }) => {
             </div>}
         </div>
         <div className="footersection">
-            <p>&copy;2020gtech || All rights reserved.</p>
-            <p>Contacts: +254712176534</p>
+            <p>&copy;2024mdtech.com</p>
+            <p>Mail: gtechmb27.infinity@gmail.com</p>
         </div>
       </div>
     </div>
