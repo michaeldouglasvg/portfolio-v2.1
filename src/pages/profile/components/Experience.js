@@ -1,6 +1,8 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { ExperienceLevel } from '../../../constants/DataFlow'
 import { FaChevronCircleDown } from 'react-icons/fa';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 
 const Experience = () => {
     const [openSections, setOpenSections] = useState({});
@@ -11,13 +13,18 @@ const Experience = () => {
         [sectionId]: !prevOpenSections[sectionId]
       }));
     };
+
+    useEffect(() => {
+        AOS.init();
+      }, []);
     
   return (
     <div className='Experiencecontainer'>
     {
         ExperienceLevel && ExperienceLevel.map((item, idx) => {
             return   <div className="singlecontainer" key={idx}>
-            <div className="names" onClick={() => toggleSection(item.id)}>
+            <div className="names" onClick={() => toggleSection(item.id)} data-aos="zoom-in"
+                                                                          data-aos-anchor-placement="top-bottom">
                 <p className='topics'>{idx + 1}. {item.level} Level ({item.workplace})</p>
                 <div className="figures">
                   <p className='topics'>Duration: {item.duration} Months.</p>
@@ -33,7 +40,8 @@ const Experience = () => {
             {openSections[item.id] && 
                 item.data.map((data, idx) => {
                     return (
-                        <div className="innercontentskills">
+                        <div className="innercontentskills" data-aos="zoom-in-down"
+                                                            data-aos-anchor-placement="top-bottom">
                             <div className="left">
                                 <div className="bars">
                                     <p className='topics'>Position: <span className='automated'>{item.position}</span></p>

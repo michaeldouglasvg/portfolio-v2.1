@@ -136,6 +136,7 @@ body{
                         flex-wrap: wrap;
                         padding: 1rem 1rem;
                         transition: all 500ms;
+                        z-inex: -100;
                         .left{
                             display: flex;
                             flex-direction: column;
