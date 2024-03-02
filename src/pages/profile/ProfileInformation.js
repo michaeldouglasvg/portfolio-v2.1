@@ -24,13 +24,13 @@ const ProfileInformation = ({ functionClose }) => {
 
         <div className="midcontent">
             {activateScreen === "Resume" && <div className="resumecontent">
-                <p>Resume Loading...</p>
+                <p>Check your internet connection and try again...</p>
             </div>}
            {activateScreen === "Experience" && <div className="experiencecontent">
                 <Experience />
             </div>}
             {activateScreen === "Certificates" && <div className="certifications">
-                <p>Certificates Loading...</p>
+                <p>Check your internet connection and try again...</p>
             </div>}
         </div>
         <div className="footersection">
