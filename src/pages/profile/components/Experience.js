@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { ExperienceLevel } from '../../../constants/DataFlow'
+import { FaChevronCircleDown } from 'react-icons/fa';
 
 const Experience = () => {
     const [openSections, setOpenSections] = useState({});
@@ -18,7 +19,16 @@ const Experience = () => {
             return   <div className="singlecontainer" key={idx}>
             <div className="names" onClick={() => toggleSection(item.id)}>
                 <p className='topics'>{idx + 1}. {item.level} Level ({item.workplace})</p>
-                <p className='topics'>Duration: {item.duration}</p>
+                <div className="figures">
+                  <p className='topics'>Duration: {item.duration}</p>
+                  <FaChevronCircleDown
+                    color='black'
+                    size={20}
+                    style={{
+                        transform: openSections[item.id] ? 'rotate(-180deg)' : 'rotate(0deg)'
+                    }}
+                    />
+                </div>
             </div>
             {openSections[item.id] && 
                 item.data.map((data, idx) => {

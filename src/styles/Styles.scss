@@ -107,6 +107,11 @@ body{
                 .singlecontainer{
                     .topics{
                         font-weight: 700;
+                        margin-right: 1rem;
+                    }
+                    .figures{
+                        display: flex;
+                        align-items: center;
                     }
                     .automated{
                         font-size: 10px;
@@ -120,7 +125,7 @@ body{
                         padding: 1rem 1rem;
                         margin-top: .2rem;
                         cursor: pointer;
-                        background: wheat;
+                        background: rgb(225, 225, 225);
                         border-radius: 5px;
                         transition: all 500ms;
                     }
