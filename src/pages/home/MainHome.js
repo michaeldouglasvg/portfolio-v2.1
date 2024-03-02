@@ -14,7 +14,7 @@ const MainHome = () => {
   return (
     <main>
       <Content />
-      <AboutMe />
+     
     </main>
   )
 }
