@@ -1,16 +1,20 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { images } from "../../../constants/AssetsFile"
 import Typed from 'typed.js';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 import { useSweetAlert } from '../../../context/alerts/Sweetalert';
+import ProfileInformation from '../../profile/ProfileInformation';
 
 const Content = () => {
   const {toastAlert} = useSweetAlert();
+  const [openProfile, setOpenProfile] = useState(false);
+  const closeProfile = () => setOpenProfile(false)
 
   const alertMessage = (name) => {
     if(name === "me") {
-      toastAlert("top-end", "info", "About me content is being uploaded, wait while am updating the site")
+      setOpenProfile(true);
+      // toastAlert("top-end", "info", "About me content is being uploaded, wait while am updating the site")
     }else if(name === "hire") {
       toastAlert("top-end", "success", "Am available to work use contact form or reach out to me through email.")
     }else{
@@ -53,6 +57,7 @@ const Content = () => {
       <article className="right">
         <img src={images.portraitone} alt="" width={200} data-aos="zoom-out-up"/>
       </article>
+      {openProfile && <ProfileInformation functionClose={closeProfile}/>}
     </section>
   )
 }

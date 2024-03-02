@@ -46,7 +46,128 @@ body{
         color: #efefef;
     }
 }
+.ProfilePage{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .7);
+    // backdrop-filter: blur(1px);
+    transition: all 500ms;
+    .close{
+        position: absolute;
+        right: 2rem;
+        top: 1rem;
+        padding: .2rem;
+        border-radius: 3px;
+        cursor: pointer;
+        background: orangered;
+    }
+    .ContentSection{
+        max-width: 70%;
+        width: 100%;
+        background: whitesmoke;
+        border-radius: 10px;
+        box-shadow: 0 0 5px 2px rgba(0, 0, 0, .2);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 70vh;
+        overflow-y: scroll;
+        .topsection{
+            width: 100%;
+            padding: .4rem 0;
+            border-bottom: 1px solid rgba(0, 0, 0, .1);
+            background: transparent;
+            position: sticky;
+            top: 0;
+            backdrop-filter: blur(6px);
+            .btns{
+                border: none;
+                border-radius: 3px;
+                padding: .6rem;
+                margin: .6rem;
+                outline: 1px solid rgba(0, 0, 0, .1);
+                cursor: pointer;
+                background: transparent;
+                span{
+                    background: transparent;
+                    color: black;
+                    font-weight: 700;
+                }
+            }
+        }
+        .midcontent{
+            padding: 1rem;
+            .Experiencecontainer{
+                width: 100%;
+                .singlecontainer{
+                    .topics{
+                        font-weight: 700;
+                    }
+                    .automated{
+                        font-size: 10px;
+                        line-height: 1.3rem;
+                    }
+                    .names{
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                    }
+                    .innercontentskills{
+                        display: flex;
+                        justify-content: space-between;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        .left{
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-start;
+                            flex-wrap: wrap;
+                            .bars{
+                                margin-top: 1rem;
+                            }
+                        }
+                        .mid{
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-start;
+                            margin-top: 1rem;
+                        }
+                        .right{
+                           display: flex;
+                            flex-direction: column;
+                            margin-top: 1rem;
+                            align-items: flex-start;
+                        }
+                    }
+                }
+            }
+        }
 
+        .footersection{
+            position: sticky;
+            bottom: 0;
+            width: 100%;
+            left: 0;
+            padding: .4rem 1rem;
+            border-radius: 0 0 10px 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            backdrop-filter: blur(3px);
+            p{
+                background: transparent;
+                color: black;
+            }
+        }
+    }
+}
 .Topsection{
     width: 100%;
     padding: 2rem 1rem;
@@ -898,6 +1019,14 @@ main {
 }
 
 @media (max-width: 769px) {
+    .ProfilePage{
+        .ContentSection{
+            max-width: 98%;
+            width: 100%;
+            margin-top: 5rem;
+        }
+    }
+   
     .type{
         top: -.1rem;
         right: -.4rem;

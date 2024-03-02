@@ -7,7 +7,7 @@ const MainHome = () => {
   const { githubLinks } = useSweetAlert();
 
   useEffect(() => {
-    githubLinks();
+    // githubLinks();
   }, [githubLinks])
 
 
