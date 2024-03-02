@@ -51,7 +51,7 @@ const Content = () => {
         <div className="description" data-aos="zoom-out-up"><p>Passionate about crafting innovative solutions through web and app development, I delve into the realms of Machine Learning and Data Science to drive meaningful insights and create impactful experiences. With a fervent dedication to technology, I strive to push boundaries and make a difference.</p></div>
         <div className="buttons">
             <button onClick={() => alertMessage("hire")}>Hire&nbsp;me</button>
-            <button onClick={() => alertMessage("me")}>Who&nbsp;I&nbsp;am</button>
+            <button onClick={() => alertMessage("me")}>Experience&nbsp;and&nbsp;More</button>
         </div>
       </article>
       <article className="right">
