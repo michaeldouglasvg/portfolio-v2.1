@@ -240,6 +240,8 @@ const ExperienceLevel = [
         id: 1,
         level: "Personal",
         position: "Student/Workshops",
+        workplace: "South Eastern Kenya University",
+        duration: "6 Months",
         data: [
             {
                 id: 1,
@@ -266,7 +268,6 @@ const ExperienceLevel = [
                     "Achieved automation of attendance tracking, reducing manual effort and potential errors associated with traditional attendance methods.",
                     "Enabled real-time attendance monitoring and reporting, providing valuable insights and improving overall organizational efficiency."
                 ],
-                duration: "5Months",
             }
         ]
     },
@@ -274,6 +275,8 @@ const ExperienceLevel = [
         id: 2,
         level: "Personal",
         position: "Student/Workshops",
+        workplace: "South Eastern Kenya University",
+        duration: "4 Months",
         data: [
             {
                 id: 1,
@@ -300,7 +303,6 @@ const ExperienceLevel = [
                     "Automated the loan classification process, reducing manual effort and minimizing potential errors associated with manual evaluation methods, thereby improving the efficiency and accuracy of loan approval decisions.",
                     "Enabled real-time monitoring and reporting of loan application statuses, providing valuable insights into the loan approval pipeline and enhancing overall organizational efficiency in managing loan applications."
                 ],
-                duration: "6Months",
             }
         ]
     },
@@ -308,6 +310,8 @@ const ExperienceLevel = [
         id: 3,
         level: "Company",
         position: "Frontent Developer",
+        workplace: "Tourism Regulatory Authority of Kenya",
+        duration: "7 Months",
         data: [
             {
                 id: 1,
@@ -337,7 +341,6 @@ const ExperienceLevel = [
                     "Enhanced collaboration and communication skills by working in a multidisciplinary team environment and coordinating tasks effectively.",
                     "Embraced continuous learning and adaptation to emerging technologies and best practices in web development.",
                 ],
-                duration: "6.5Months",
             }
         ]
     },
@@ -345,6 +348,8 @@ const ExperienceLevel = [
         id: 4,
         level: "Company",
         position: "Fullstack Developer",
+        workplace: "Deveint Ltd.",
+        duration: "4 Months",
         data: [
             {
                 id: 1,
@@ -370,7 +375,6 @@ const ExperienceLevel = [
                     "Developed problem-solving skills through troubleshooting and resolving issues encountered during development.",
                     "Improved collaboration and communication skills by working closely with cross-functional teams and stakeholders.",
                 ],
-                duration: "6.5Months",
             }
         ]
     },

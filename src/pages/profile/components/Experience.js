@@ -1,18 +1,26 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { ExperienceLevel } from '../../../constants/DataFlow'
 
 const Experience = () => {
+    const [openSections, setOpenSections] = useState({});
 
+    const toggleSection = (sectionId) => {
+      setOpenSections((prevOpenSections) => ({
+        ...prevOpenSections,
+        [sectionId]: !prevOpenSections[sectionId]
+      }));
+    };
+    
   return (
     <div className='Experiencecontainer'>
     {
         ExperienceLevel && ExperienceLevel.map((item, idx) => {
             return   <div className="singlecontainer" key={idx}>
-            <div className="names">
-                <p className='topics'>{idx + 1}. {item.level} Level</p>
-                <p className='topics'>Years: 2Years</p>
+            <div className="names" onClick={() => toggleSection(item.id)}>
+                <p className='topics'>{idx + 1}. {item.level} Level ({item.workplace})</p>
+                <p className='topics'>Duration: {item.duration}</p>
             </div>
-               {
+            {openSections[item.id] && 
                 item.data.map((data, idx) => {
                     return (
                         <div className="innercontentskills">
@@ -49,7 +57,7 @@ const Experience = () => {
                             </div>
                             <div className="right">
                                 <div className="descriptions">
-                                    <p className='topics'>Achievements</p>
+                                    <p className='topics'>Skills Gained</p>
                                     {
                                         data.achivements.map((achieve, index) => {
                                             return <p className='automated'>{index + 1}. {achieve}</p>
@@ -60,8 +68,7 @@ const Experience = () => {
                         </div>
                     )
                 })
-               }
-                
+            }
             </div>
         })
     }

@@ -117,12 +117,20 @@ body{
                         display: flex;
                         align-items: center;
                         justify-content: space-between;
+                        padding: 1rem 1rem;
+                        margin-top: .2rem;
+                        cursor: pointer;
+                        background: wheat;
+                        border-radius: 5px;
+                        transition: all 500ms;
                     }
                     .innercontentskills{
                         display: flex;
                         justify-content: space-between;
                         flex-direction: row;
                         flex-wrap: wrap;
+                        padding: 1rem 1rem;
+                        transition: all 500ms;
                         .left{
                             display: flex;
                             flex-direction: column;
