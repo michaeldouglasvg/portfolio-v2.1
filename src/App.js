@@ -12,7 +12,7 @@ import LoaderMain from "./pages/loader/Loader";
 
 function App() {
   const { darkMode } = useTheme();
-  const [isLoader, setIsLoader] = useState(false);
+  const [isLoader, setIsLoader] = useState(true);
 
   React.useEffect(() => {
     if (darkMode) {

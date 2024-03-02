@@ -20,7 +20,7 @@ const Experience = () => {
             <div className="names" onClick={() => toggleSection(item.id)}>
                 <p className='topics'>{idx + 1}. {item.level} Level ({item.workplace})</p>
                 <div className="figures">
-                  <p className='topics'>Duration: {item.duration}</p>
+                  <p className='topics'>Duration: {item.duration} Months.</p>
                   <FaChevronCircleDown
                     color='black'
                     size={20}

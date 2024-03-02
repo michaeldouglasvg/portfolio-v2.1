@@ -241,7 +241,7 @@ const ExperienceLevel = [
         level: "Personal",
         position: "Student/Workshops",
         workplace: "South Eastern Kenya University",
-        duration: "6 Months",
+        duration: 6,
         data: [
             {
                 id: 1,
@@ -276,7 +276,7 @@ const ExperienceLevel = [
         level: "Personal",
         position: "Student/Workshops",
         workplace: "South Eastern Kenya University",
-        duration: "4 Months",
+        duration: 5,
         data: [
             {
                 id: 1,
@@ -311,7 +311,7 @@ const ExperienceLevel = [
         level: "Company",
         position: "Frontent Developer",
         workplace: "Tourism Regulatory Authority of Kenya",
-        duration: "7 Months",
+        duration: 7,
         data: [
             {
                 id: 1,
@@ -349,7 +349,7 @@ const ExperienceLevel = [
         level: "Company",
         position: "Fullstack Developer",
         workplace: "Deveint Ltd.",
-        duration: "4 Months",
+        duration: 4,
         data: [
             {
                 id: 1,

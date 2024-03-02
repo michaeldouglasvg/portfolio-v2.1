@@ -4,6 +4,7 @@ import Experience from './components/Experience';
 
 const ProfileInformation = ({ functionClose }) => {
   const [activateScreen, setActivateScreen] = useState("Experience");
+
   return (
     <div className='ProfilePage'>
       <div className="close"><FaTimes color='white' size={30} onClick={functionClose}/></div>
