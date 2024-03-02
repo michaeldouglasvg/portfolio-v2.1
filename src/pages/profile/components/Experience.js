@@ -25,9 +25,9 @@ const Experience = () => {
             return   <div className="singlecontainer" key={idx}>
             <div className="names" onClick={() => toggleSection(item.id)} data-aos="zoom-in"
                                                                           data-aos-anchor-placement="top-bottom">
-                <p className='topics'>{idx + 1}. {item.level} Level ({item.workplace})</p>
+                <p className='topics'>{idx + 1}. {item.level} {item.level === "Online" ?"Certificates":"Level"} ({item.workplace})</p>
                 <div className="figures">
-                  <p className='topics'>Duration: {item.duration} Months.</p>
+                  <p className='topics'>Duration: {item.duration} {item.level === "Online" ?"Years":"Months"}.</p>
                   <FaChevronCircleDown
                     color='black'
                     size={20}

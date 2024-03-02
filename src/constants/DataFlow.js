@@ -238,8 +238,8 @@ const ProjectData = [
 const ExperienceLevel = [
     {
         id: 1,
-        level: "Personal",
-        position: "Student/Workshops",
+        level: "Academic",
+        position: "4th Year Project",
         workplace: "South Eastern Kenya University",
         duration: 6,
         data: [
@@ -273,8 +273,8 @@ const ExperienceLevel = [
     },
     {
         id: 2,
-        level: "Personal",
-        position: "Student/Workshops",
+        level: "Academic",
+        position: "Student/Team Work",
         workplace: "South Eastern Kenya University",
         duration: 5,
         data: [
@@ -308,7 +308,34 @@ const ExperienceLevel = [
     },
     {
         id: 3,
-        level: "Company",
+        level: "Online",
+        position: "Certifications/Coding Challenges",
+        workplace: "Huawei Seeds for future",
+        duration: 2,
+        data: [
+            {
+                id: 1,
+                name: "Huawei",
+                category: "Coding challenges",
+                technologies: ["JavaScript", "Python", "SQL", "MySQL", "Networking", "Cisco", "Data Modeling"],
+                description:[
+                    "Successfully enrolled as a participant under seeds for future through iLearn Platform",
+                    "Implemented network solutions using Cisco package and Data Mining using Python",
+                    "Enhanced online tools for study and quiz best practices",
+                ],
+                problemSolved: "Actively involved in this projects to learn and expand the way we visualize basic system functionality such as input/output and processess, so as to develop robust systems that can accept and process any given input data both in bulk and simple processess.",
+                achivements: [
+                    "Gained proficiency in system data flow and design.",
+                    "Acquired insights into designing and implementing interactive user experience as well as complex system management",
+                    "Deepened understanding of data management using cloud services and automation using Machine Learning",
+                    "Note: Much on this, please click the certificate button to view and download. Thank you."
+                ],
+            }
+        ]
+    },
+    {
+        id: 4,
+        level: "Production",
         position: "Frontent Developer",
         workplace: "Tourism Regulatory Authority of Kenya",
         duration: 7,
@@ -345,8 +372,8 @@ const ExperienceLevel = [
         ]
     },
     {
-        id: 4,
-        level: "Company",
+        id: 5,
+        level: "Production",
         position: "Fullstack Developer",
         workplace: "Deveint Ltd.",
         duration: 4,
@@ -378,6 +405,7 @@ const ExperienceLevel = [
             }
         ]
     },
+   
 ]
 
 export {DataCertificates, Services, ExperienceData, ProjectData, ExperienceLevel}
