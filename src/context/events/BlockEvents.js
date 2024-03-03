@@ -7,10 +7,10 @@ function DisableRightClick({ children }) {
       event.preventDefault();
       event.stopPropagation();
       Swal.fire({
-        title: 'From: GtechAmour.com!!!',
-        text: "Sorry user!!! 🖱️ Drag & Drop and Right-clicking are strictly prohibited on this site. Kindly requesting that you refrain from using these actions due to security measures that protect the integrity and confidentiality of my website's digital certificate.Thank you for visiting this page and for respecting my website's security protocols.",
-        icon: 'warning',
-        confirmButtonText: 'Thank you'
+        title: 'Downloading Cert!!!',
+        text: "I kindly request that you utilize the designated download button for certificate retrieval due to our security protocols. Unfortunately, drag-and-drop and right-click actions are restricted on this page. Please provide your email address through the download button, and your certificates will be promptly delivered to you via email.",
+        icon: 'info',
+        confirmButtonText: 'Got it'
       })
     };
 
