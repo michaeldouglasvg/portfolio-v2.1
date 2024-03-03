@@ -1,72 +1,4 @@
 import { images } from "./AssetsFile";
-
-const DataCertificates = [
- {
-  id: 1,
-  certName: "HCIA-Cloud Services V2.2",
-  certImage: images.designer,
-  certDate: "September 5, 2021",
-  certFrom: "Huawei",
- },
- {
-  id: 2,
-  certName: "HCIA-AI Course",
-  certImage: images.designer,
-  certDate: "September 5, 2021",
-  certFrom: "Huawei",
- },
- {
-  id: 3,
-  certName: "HCIA-Big Data Course",
-  certImage: images.designer,
-  certDate: "September 5, 2021",
-  certFrom: "Huawei",
- },
- {
-  id: 4,
-  certName: "HCIA-Cloud Computing",
-  certImage: images.designer,
-  certDate: "September 5, 2021",
-  certFrom: "Huawei",
- },
- {
-  id: 5,
-  certName: "HCIA-Storage",
-  certImage: images.designer,
-  certDate: "September 7, 2021",
-  certFrom: "Huawei",
- },
- {
-  id: 6,
-  certName: "HCIE-Big Data-Data Mining",
-  certImage: images.designer,
-  certDate: "September 12, 2021",
-  certFrom: "Huawei",
- },
- {
-  id: 7,
-  certName: "HCIE-Cloud Service Solution Architech",
-  certImage: images.designer,
-  certDate: "September 17, 2021",
-  certFrom: "Huawei",
- },
- {
-  id: 8,
-  certName: "HCIP-AI EI Developer",
-  certImage: images.designer,
-  certDate: "September 7, 2021",
-  certFrom: "Huawei",
- },
- {
-  id: 9,
-  certName: "HCIP-Storage Course",
-  certImage: images.designer,
-  certDate: "September 5, 2021",
-  certFrom: "Huawei",
- },
-]
-
-
 // Services page
 const Services = [
     {
@@ -408,4 +340,70 @@ const ExperienceLevel = [
    
 ]
 
-export {DataCertificates, Services, ExperienceData, ProjectData, ExperienceLevel}
+
+const Certifcates = [
+    {
+     id: 1,
+     certName: "HCIA-Cloud Services V2.2",
+     certImage: images.Certificate1,
+     certDate: "Sep 5, 2021",
+     certFrom: "Huawei",
+    },
+    {
+     id: 2,
+     certName: "HCIA-AI Course",
+     certImage: images.Certificate2,
+     certDate: "Sep 5, 2021",
+     certFrom: "Huawei",
+    },
+    {
+     id: 3,
+     certName: "HCIA-Big Data Course",
+     certImage: images.Certificate3,
+     certDate: "Sep 5, 2021",
+     certFrom: "Huawei",
+    },
+    {
+     id: 4,
+     certName: "HCIA-Cloud Computing",
+     certImage: images.Certificate4,
+     certDate: "Sep 5, 2021",
+     certFrom: "Huawei",
+    },
+    {
+     id: 5,
+     certName: "HCIA-Storage",
+     certImage: images.Certificate5,
+     certDate: "Sep 7, 2021",
+     certFrom: "Huawei",
+    },
+    {
+     id: 6,
+     certName: "HCIE-Big Data-Data Mining",
+     certImage: images.Certificate6,
+     certDate: "Sep 12, 2021",
+     certFrom: "Huawei",
+    },
+    {
+     id: 7,
+     certName: "HCIE-Cloud Service Solution Architech",
+     certImage: images.Certificate7,
+     certDate: "Sep 17, 2021",
+     certFrom: "Huawei",
+    },
+    {
+     id: 8,
+     certName: "HCIP-AI EI Developer",
+     certImage: images.Certificate8,
+     certDate: "Sep 7, 2021",
+     certFrom: "Huawei",
+    },
+    {
+     id: 9,
+     certName: "HCIP-Storage Course",
+     certImage: images.Certificate9,
+     certDate: "Sep 5, 2021",
+     certFrom: "Huawei",
+    },
+   ]
+export {Services, ExperienceData, ProjectData, ExperienceLevel, Certifcates}

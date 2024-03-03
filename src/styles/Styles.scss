@@ -34,6 +34,116 @@ body{
     overflow-x: hidden;
 }
 
+// Certicates
+.certicateMain{
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    grid-gap: .5rem;
+    .leftdisplay{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+        grid-gap: 1rem;
+        &::-webkit-scrollbar{
+            display: none;
+        }
+        .singlecer{
+           max-width: 290px;
+           width: 100%;
+           margin: .2rem auto;
+           max-height: 350px;
+           overflow: hidden;
+           position: relative;
+           box-shadow: 0 0 5px 2px rgba(0, 0, 0, .1);
+           &:hover{
+            .provider{
+                transition: all 500ms;
+                .certname{
+                    display: block;
+                    color: #efefef;
+                }
+                .certdata{
+                    display: none;
+                }
+            }
+           }
+           .image{
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                transition: all 500ms;
+                &:hover{
+                    img{
+                        transform: scale(1.1);
+                    }
+                }
+                img{
+                    width: 100%;
+                    height: 100%;
+                    transition: all 500ms;
+                }
+           }
+           .provider{
+                width: 100%;
+                padding: 1rem .6rem;
+                background: rgba(0, 0, 0, .7);
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                position: absolute;
+                top: 0;
+                border-radius: 0 0 10px 10px;
+                .certname{
+                    display: none;
+                }
+                .certdata{
+                    color: white;
+                }
+           }
+           .footer{
+                width: 100%;
+                padding: 1rem 2rem;
+                background: rgba(0, 0, 0, .7);
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                position: absolute;
+                bottom: 0;
+                border-radius: 10px 10px 0 0;
+                .footericon{
+                    font-size: 1.3rem;
+                    color: white;
+                    cursor: pointer;
+                }
+                .like{
+                    position: relative;
+                }
+                .downloadOptions{
+                    position: absolute;
+                    top: -5rem;
+                    left: -100px;
+                    background: #081a27;
+                    padding: .2rem 0;
+                    border-radius: 10px 10px 0 10px;
+                    p{
+                        color: white;
+                        padding: .2rem .2rem;
+                        cursor: pointer;
+                        &:hover{
+                            background: whitesmoke;
+                            color: grey;
+                        }
+                    }
+                }
+           }
+        }
+
+    }
+}
+
 .InitialScreen{
     width: 100%;
     height: 100vh;
