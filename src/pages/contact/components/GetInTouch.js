@@ -32,7 +32,7 @@ const GetInTouch = () => {
             </div>
             <div className="infomation">
                 <p>Call</p>
-                <p>+2547123 23476</p>
+                <p>+2547121 76534</p>
             </div>
             <div className="type">
                 <p>Open</p>
@@ -47,7 +47,7 @@ const GetInTouch = () => {
                 <p>Nairobi, Kenya.</p>
             </div>
             <div className="type">
-                <p style={{color: 'orangered'}}>Closed</p>
+              <p>Open</p>
             </div>
         </div>
         <div className="links" data-aos="zoom-out">
